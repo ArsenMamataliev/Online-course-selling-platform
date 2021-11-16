@@ -6,7 +6,7 @@ let user = {
 }
 
 const lessonList = [
-{lessonName: "Урок 1", lessonURL: "https://www.youtube.com/watch?v=nDPJAbublas"},
+{lessonName: "Урок 1", lessonURL: "https://youtu.be/U5EemWhhuz4"},
 {lessonName: "Урок 2", lessonURL: "https://www.youtube.com/watch?v=nDPJAbublas"},
 {lessonName: "Урок 3", lessonURL: "https://www.youtube.com/watch?v=nDPJAbublas"},
 {lessonName: "Урок 4", lessonURL: "https://www.youtube.com/watch?v=nDPJAbublas"},
