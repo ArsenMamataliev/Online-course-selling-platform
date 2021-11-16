@@ -7,7 +7,7 @@ import Profile from './pages/Profile';
 function App() {
   return (
     <div className="App">
-      <Router >  
+      <Router>  
         <Switch>
           <Route exact path="/" component ={Home} />
           <Route  path="/profile" component ={Profile} />

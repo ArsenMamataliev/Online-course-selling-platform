@@ -1,9 +1,10 @@
 import React from 'react'
 import SignIn from '../components/SignIn'
 
+
 function Home() {
     return (
-        <div>
+        <div className = "home">
           <SignIn/>  
         </div>
     )
