@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {useHistory} from "react-router-dom";
 import { useDispatch } from 'react-redux';
 import { passwordVerification } from '../app/features/userSlice';
+import amazonLogo from '../media/amazonlogomini.jpg';
 
 function SignIn() {
 
@@ -20,7 +21,7 @@ function SignIn() {
 
         <form action="" className="form-container">
             <h1>Вход в систему</h1>
-
+            <img src={amazonLogo} alt="Amozon logo"/>
             <label htmlFor="text"><b>Логин</b></label>
             <input type="text" 
                 placeholder="Логин"

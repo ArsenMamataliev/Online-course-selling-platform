@@ -17,7 +17,7 @@ import { signOut } from '../app/features/userSlice';
 export default function AccountMenu() {
 
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const lessonList = useSelector(state => state.user.lessonList);
+  const courseList = useSelector(state => state.user.courseList);
   const loginStatus = useSelector(state => state.user.status);
   const history = useHistory();
 
@@ -37,11 +37,22 @@ export default function AccountMenu() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const boxStyle = {
+    display: 'flex',
+    alignItems: 'flex-end',
+    justifyContent: 'space-between', 
+    textAlign: 'center',
+    padding: '5px 10px',
+    color: 'white',
+    backgroundColor: '#090d29'
+  }
+
   return (
     <React.Fragment>
-      <Box sx={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'flex-end', textAlign: 'center', color: 'red'}}>
-        <Typography sx={{ minWidth: 250 }}>AMZ team</Typography>
-        <Typography sx={{ minWidth: 100 }}>Уроки: {lessonList.length} </Typography>
+      <Box sx={boxStyle}>
+        <Typography sx={{ minWidth: 100 }}>Амазон курс</Typography>
+        <Typography sx={{ minWidth: 50 }}>Уроки: {courseList.length} </Typography>
         <Tooltip title="Настройка аккаунта">
           <IconButton onClick={handleClick} size="small" sx={{ ml: 2 }}>
             <Avatar sx={{ width: 32, height: 32 }}>A</Avatar>

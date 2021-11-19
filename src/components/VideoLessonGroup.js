@@ -2,17 +2,18 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 import VideoLesson from './VideoLesson';
 
+
 function VideoLessonGroup() {
     
-    const lessonList = useSelector(state => state.user.lessonList);
+    const courseList = useSelector(state => state.user.courseList);
     return (
         <div>
             {
-                lessonList.map((lesson, id)=>
+                courseList.map((course, index)=>
                     <VideoLesson 
-                        key = {id}
-                        name = {lesson.lessonName}
-                        url = {lesson.lessonURL}
+                        key = {index}
+                        name = {course.courseTitle}
+                        subtopics = {course.subtopics}
                     />
                 )
             }

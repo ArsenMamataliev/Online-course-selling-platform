@@ -5,7 +5,7 @@ import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
-import Subtopics from './Subtopics';
+import Iframe from './Iframe';
 
 
 const Accordion = styled((props) => (
@@ -44,7 +44,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   borderTop: '1px solid rgba(0, 0, 0, .125)',
 }));
 
-export default function VideoLesson({name, subtopics}) {
+export default function VideoLesson({name, url}) {
   const [expanded, setExpanded] = React.useState('panel');
 
   const handleChange = (panel) => (event, newExpanded) => {
@@ -54,18 +54,10 @@ export default function VideoLesson({name, subtopics}) {
     <div>
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>{name} Всего: {subtopics.length}</Typography>
+          <Typography>{name}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          {
-            subtopics.map((topic, index)=>
-              <Subtopics
-                key = {index}
-                name = {topic.courseName}
-                url = {topic.courseURL}
-              />
-            )
-          }
+             <Iframe url={url}/>
         </AccordionDetails>
       </Accordion>
     </div>

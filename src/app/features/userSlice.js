@@ -1,31 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
+import courseList from './courseList';
 
 let user = {
-  login: "developer21",
-  password: "123456"
+  login: "admin",
+  password: "123"
 }
-
-const lessonList = [
-{lessonName: "Урок 1", lessonURL: "https://youtu.be/U5EemWhhuz4"},
-{lessonName: "Урок 2", lessonURL: "https://www.youtube.com/watch?v=nDPJAbublas"},
-{lessonName: "Урок 3", lessonURL: "https://www.youtube.com/watch?v=nDPJAbublas"},
-{lessonName: "Урок 4", lessonURL: "https://www.youtube.com/watch?v=nDPJAbublas"},
-{lessonName: "Урок 5", lessonURL: "https://www.youtube.com/watch?v=nDPJAbublas"},
-{lessonName: "Урок 6", lessonURL: "https://www.youtube.com/watch?v=nDPJAbublas"},
-{lessonName: "Урок 7", lessonURL: "https://www.youtube.com/watch?v=nDPJAbublas"},
-{lessonName: "Урок 8", lessonURL: "https://www.youtube.com/watch?v=nDPJAbublas"},
-{lessonName: "Урок 9", lessonURL: "https://www.youtube.com/watch?v=nDPJAbublas"},
-{lessonName: "Урок 10", lessonURL: "https://www.youtube.com/watch?v=nDPJAbublas"},
-{lessonName: "Урок 11", lessonURL: "https://www.youtube.com/watch?v=nDPJAbublas"},
-{lessonName: "Урок 12", lessonURL: "https://www.youtube.com/watch?v=nDPJAbublas"}
-];
 
 const userSlice = createSlice({
   name: "user",
   initialState: {
     user, 
     status: false,
-    lessonList
+    courseList
   },
   reducers:{
     passwordVerification(state, action){

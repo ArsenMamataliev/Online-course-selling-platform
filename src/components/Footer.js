@@ -1,9 +1,11 @@
 import React from 'react'
+import SocialMediaIcons from './SocialMediaIcons'
 
 function Footer() {
     return (
-        <div>
-            Мы в сотсетях:
+        <div className="footer">
+            <h4>Мы в этих сотсетях</h4>
+            <SocialMediaIcons/>
         </div>
     )
 }

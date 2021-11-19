@@ -1,6 +1,8 @@
 import React from 'react';
 import AccountMenu from '../components/AccountMenu';
 import Footer from '../components/Footer';
+import Pagination from '../components/Pagination';
+import PhotoSlider from '../components/PhotoSlider';
 import VideoLessonGroup from '../components/VideoLessonGroup';
 
 function Profile() {
@@ -8,8 +10,11 @@ function Profile() {
     return (
         <div className="profile">
             <AccountMenu/>
+            <PhotoSlider/>
             <VideoLessonGroup/>
+            <Pagination/>
             <Footer/>
+
         </div>
     )
 }
