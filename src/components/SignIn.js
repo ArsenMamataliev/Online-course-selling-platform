@@ -1,15 +1,22 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {useHistory} from "react-router-dom";
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { passwordVerification } from '../app/features/userSlice';
 import amazonLogo from '../media/amazonlogomini.jpg';
+import CustomizedSnackbars from './Alert';
 
 function SignIn() {
 
     const history = useHistory();
     const dispatch = useDispatch();
+    const signInStatus = useSelector(state => state.user.status);
 
-
+    useEffect(() => {
+        if(signInStatus){
+            history.push('/courses');
+        }
+      }, [signInStatus]);
+     
 
     const [login, setLogin] = useState("");
     const [password, setPassword] = useState("");
@@ -44,11 +51,15 @@ function SignIn() {
                 className="btn"
                 onClick = {() => {
                     dispatch(passwordVerification({login, password}));
-                    history.push("/profile")
                 }}
             >
             Вход
             </button>
+
+            {
+               !signInStatus ?  < CustomizedSnackbars severity='error' title = 'Неправильный логин или пароль'/> : ''
+            }
+            
         </form>    
     )
 }

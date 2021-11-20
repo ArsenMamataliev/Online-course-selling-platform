@@ -8,6 +8,7 @@ import amazon2 from '../media/amazoncenter2.jpg';
 import amazon3 from '../media/amazonlogo2.jpg';
 import amazon4 from '../media/amazonwarehouse.jpg';
 import amazon5 from '../media/amazonlogomini.jpg';
+import { Button } from 'react-bootstrap';
 
 const AutoplaySlider = withAutoplay(AwesomeSlider);
 
@@ -18,7 +19,7 @@ function PhotoSlider() {
       cancelOnInteraction={false} // should stop playing on user interaction
       interval={6000}
     >
-      <div data-src={amazon2} />
+      <div data-src={amazon2}> <Button>dfahdkfjlahsdfk</Button></div>
       <div data-src={amazon1} />
       <div data-src={amazon} />
       <div data-src={amazon3} />

@@ -7,7 +7,8 @@ function Iframe({url}) {
                 className="frame"
                 title="This is a unique title" 
                 src={url}
-            />
+            >
+            </iframe>
         </div>
     )
 }

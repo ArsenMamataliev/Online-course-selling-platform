@@ -10,7 +10,7 @@ import Typography from '@mui/material/Typography';
 import Tooltip from '@mui/material/Tooltip';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
-import { Redirect, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { signOut } from '../app/features/userSlice';
 
@@ -18,7 +18,7 @@ export default function AccountMenu() {
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const courseList = useSelector(state => state.user.courseList);
-  const loginStatus = useSelector(state => state.user.status);
+  // const loginStatus = useSelector(state => state.user.status);
   const history = useHistory();
 
   const signOutFn = () => {
@@ -26,9 +26,9 @@ export default function AccountMenu() {
       signOut();
     }
     
-  if(!loginStatus){
-      return <Redirect to="/" />
-  }
+  // if(!loginStatus){
+  //     return <Redirect to="/" />
+  // }
 
   const open = Boolean(anchorEl);
   const handleClick = (event) => {

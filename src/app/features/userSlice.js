@@ -15,6 +15,7 @@ const userSlice = createSlice({
   },
   reducers:{
     passwordVerification(state, action){
+
       if(state.user.login === action.payload.login && state.user.password === action.payload.password){
         return {...state, status : true};
       }
