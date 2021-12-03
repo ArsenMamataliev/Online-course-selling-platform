@@ -12,13 +12,13 @@ export default function SocialMediaIcons() {
         <Link href="https://www.instagram.com/amazon_forseller/">
           <InstagramIcon style={{fill: "pink"}}/>
         </Link>
-        <Link href="#">
+        <Link href="https://tttttt.me/AMAzone_telegram">
           <TelegramIcon style={{fill: "blue"}}/>
         </Link>
-        <Link href="#">
+        <Link href="https://www.youtube.com/channel/UCxrshyKUTQDsbKtuXzDLJbg">
           <YouTubeIcon style={{fill: "red"}}/>
         </Link>
-        <Link href="#">
+        <Link href="https://wa.link/hwd7jx">
           <WhatsAppIcon style={{fill: "green"}}/>
         </Link>
     </Stack>

@@ -12,7 +12,6 @@ function Profile() {
             <AccountMenu/>
             <PhotoSlider/>
             <VideoLessonGroup/>
-            <Pagination/>
             <Footer/>
 
         </div>

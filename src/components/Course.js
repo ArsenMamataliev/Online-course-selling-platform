@@ -1,13 +1,11 @@
-import React, {useState} from 'react'
-import { Button } from 'react-bootstrap';
+import React from 'react';
 import {useHistory} from "react-router-dom";
+import Button from '@mui/material/Button';
 import CustomizedSnackbars from './Alert';
-import amazonAdvertise from '../media/amazon_advertise.mp4';
 
-
-function Course({name, access}) { 
-    const [showErrorAlert, setShowErrorAlert] = useState(false);
-    const [showSuccessAlert, setShowSuccessAlert] = useState(false)
+function Course({name, access, mediaURL}) { 
+    const [showErrorAlert, setShowErrorAlert] = React.useState(false);
+    const [showSuccessAlert, setShowSuccessAlert] = React.useState(false)
     const history = useHistory(); 
 
 
@@ -20,16 +18,23 @@ function Course({name, access}) {
         }
     }
     return (
-        <div className="course">
+        <div className='courseList'>
             <h2>{name}</h2>
-            <iframe  src={amazonAdvertise} title="fsdf"/>
-            <Button onClick={accessFn}>Начать курс</Button>
+            <img src={mediaURL} alt="photoName" />
+            <Button 
+                variant="contained"
+                color="warning"
+                onClick={accessFn}
+                fullWidth='true'
+            >
+                Начать курс
+            </Button>
             {
-               showErrorAlert ?  <CustomizedSnackbars severity='error' title = 'У вас нету доступ на этот курс'/> : ''
+               showErrorAlert ?  <CustomizedSnackbars severity='error' title='У вас нету доступ на этот курс'/> : ''
             }
 
             {
-                showSuccessAlert ?  <CustomizedSnackbars severity='success' title = 'Доступ есть'/> : ''
+                showSuccessAlert ?  <CustomizedSnackbars severity='success' title='Доступ есть'/> : ''
             }
             
         </div>

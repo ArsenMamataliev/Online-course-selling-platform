@@ -10,15 +10,16 @@ import Typography from '@mui/material/Typography';
 import Tooltip from '@mui/material/Tooltip';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
-import { useHistory } from "react-router-dom";
+import { useHistory,Redirect } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { signOut } from '../app/features/userSlice';
+import logo from '../media/logo.png';
 
 export default function AccountMenu() {
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const courseList = useSelector(state => state.user.courseList);
-  // const loginStatus = useSelector(state => state.user.status);
+  const loginStatus = useSelector(state => state.user.status);
   const history = useHistory();
 
   const signOutFn = () => {
@@ -26,9 +27,9 @@ export default function AccountMenu() {
       signOut();
     }
     
-  // if(!loginStatus){
-  //     return <Redirect to="/" />
-  // }
+  if(!loginStatus){
+      return <Redirect to="/" />
+  }
 
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -51,7 +52,7 @@ export default function AccountMenu() {
   return (
     <React.Fragment>
       <Box sx={boxStyle}>
-        <Typography sx={{ minWidth: 100 }}>Амазон курс</Typography>
+        < img src={logo} alt="logo" style={{ minWidth: 80, height: 40 }}/>
         <Typography sx={{ minWidth: 50 }}>Уроки: {courseList.length} </Typography>
         <Tooltip title="Настройка аккаунта">
           <IconButton onClick={handleClick} size="small" sx={{ ml: 2 }}>

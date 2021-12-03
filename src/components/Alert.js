@@ -20,7 +20,7 @@ export default function CustomizedSnackbars(prop) {
 
   return (
     <Stack spacing={2} sx={{ width: '100%' }}>
-      <Snackbar open={open} autoHideDuration={4000} onClose={handleClose}>
+      <Snackbar open={open} autoHideDuration={3000} onClose={handleClose}>
         <Alert onClose={handleClose} severity={prop.severity} sx={{ width: '100%' }}>
           {prop.title}
         </Alert>

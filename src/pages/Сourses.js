@@ -5,18 +5,22 @@ import {useSelector} from  'react-redux'
 function Courses() {
     const courses = useSelector(state =>state.courses.courses);
     return (
-        <div>
+        <div className='courseGroup'>
+            <div>
             <h2>Курсы</h2>
-            {
-                courses.map((course, index) =>
-                     <Course
-                        key = {index}
-                        name = {course.courseName}
-                        mediaURL = {course.mediaURL}
-                        access = {course.access}
-                     />
-                )
-            } 
+            </div>
+            <div className="courses">
+                {
+                    courses.map((course, index) =>
+                        <Course
+                            key={index}
+                            name={course.courseName}
+                            mediaURL={course.mediaURL}
+                            access={course.access}
+                        />
+                    )
+                }
+            </div>
         </div>
     )
 }
