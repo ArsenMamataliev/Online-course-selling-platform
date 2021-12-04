@@ -126,7 +126,7 @@ code {
 
 .courseList{
   width: 100%;
-  
+  margin: 0 5px;
 }
 
 .courseList img {

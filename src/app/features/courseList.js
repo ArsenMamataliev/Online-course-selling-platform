@@ -2,22 +2,22 @@ const courseList = [
     { 
       courseTitle: "Урок 1",
       subtopics: [
-        {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/U5EemWhhuz4"},
-        {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/U5EemWhhuz4"},
-        {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/U5EemWhhuz4"}
+        {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/EBkf9zfcH2M"},
+        {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/EBkf9zfcH2M"},
+        {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/EBkf9zfcH2M"}
       ]
     },
     { 
         courseTitle: "Урок 2",
         subtopics: [
-          {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/U5EemWhhuz4"}
+          {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/EBkf9zfcH2M"}
         ]
       },
       { 
         courseTitle: "Урок 3",
         subtopics: [
-          {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/U5EemWhhuz4"},
-          {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/U5EemWhhuz4"}
+          {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/EBkf9zfcH2M"},
+          {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/EBkf9zfcH2M"}
         ]
       },
       { 
