@@ -4,7 +4,7 @@ import SocialMediaIcons from './SocialMediaIcons'
 function Footer() {
     return (
         <div className="footer">
-            <h4>Мы в этих сотсетях</h4>
+            <p>Мы в этих сотсетях</p>
             <SocialMediaIcons/>
         </div>
     )

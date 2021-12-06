@@ -58,55 +58,41 @@ code {
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-  background-color:orange;
+  background-color:rgb(231, 150, 0);
   color: white;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
   width: 100%;
   margin-bottom:10px;
-  opacity: 0.8;
 }
 
 .form-container .btn:hover {
   background-color: #d18a07e8;
 }
 
-.btn{
-  background-color: #f8af27e8;
-  border-radius: 5px;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 200px;
-}
-
-/* Add some hover effects to buttons */
-.btn:hover {
-  background-color: #c9870ee8;
-}
-
+/* Home Page */
 .home{
   background-image: url("./media/amazoncenter2.jpg");
   background-position: center; 
   background-size: cover;
 }
 
+/* Footer */
 .footer{
  background-color:orange;
  color: white;
  text-align: center;
-}
-.footer h4{
-  padding-top: 10px;
+ padding: 5px 0 10px 0;
 }
 
-/* .course{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
+.footer p{
+  padding: 0;
+  letter-spacing: 4px;
+  margin-bottom:10px;
+}
+
+
 
 /* Courses Page */
 
@@ -142,42 +128,34 @@ code {
 }
 
 
-/* .frame{
-position:fixed;
-top:0;
-left:0;
-bottom:0;
-right:0;
-width:100%; 
-height:100%;
-border:none; 
-margin:0; 
-padding:0;
-overflow:hidden;
-z-index:999999;
-} */
-/* Media Query */
-/* 
-@media only screen and (max-width: 320px)
-{
-  .home{
-    height: 568px;
-  }
+/* No internet Page */
+
+.no-internet{
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+#no-internet-icon{
+  padding-top: 50px;
+  width: 100%;
+  height: 500px;
 }
 
-@media only screen and (max-width: 414px) and (min-width: 361px)
-{
-  .home{
-    height: 823px;
-  }
-}
-*/
+/* Responsive layout */
 
 @media only screen and (max-width: 767px) and (min-width: 260px){
   .courses{
     display: flex;
     flex-direction: column;
   }
+  #no-internet-icon{
+    padding-top: 50px;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
 }
 
  @media only screen and (max-width: 1024px) and (min-width: 768px)

@@ -2,8 +2,8 @@ const courseList = [
     { 
       courseTitle: "Урок 1",
       subtopics: [
-        {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/EBkf9zfcH2M"},
-        {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/EBkf9zfcH2M"},
+        {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/XBu0PIhOlqs"},
+        {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/3OZA9FuRa34"},
         {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/EBkf9zfcH2M"}
       ]
     },

@@ -9,7 +9,7 @@ import Stack from '@mui/material/Stack';
 export default function SocialMediaIcons() {
   return (
     <Stack direction="row" justifyContent="center" spacing={2}>
-        <Link href="https://www.instagram.com/amazon_forseller/">
+        <Link href="https://www.instagram.com/amazone_kg/">
           <InstagramIcon style={{fill: "pink"}}/>
         </Link>
         <Link href="https://tttttt.me/AMAzone_telegram">

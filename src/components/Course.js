@@ -8,11 +8,10 @@ function Course({name, access, mediaURL}) {
     const [showSuccessAlert, setShowSuccessAlert] = React.useState(false)
     const history = useHistory(); 
 
-
     const accessFn = () => {
         if(access){
             setShowSuccessAlert(true);
-            history.push('/profile')
+            history.push('/profile');
         }else{
             setShowErrorAlert(true)
         }

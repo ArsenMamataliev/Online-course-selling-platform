@@ -10,7 +10,7 @@ import Typography from '@mui/material/Typography';
 import Tooltip from '@mui/material/Tooltip';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
-import { Redirect } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { signOut } from '../app/features/userSlice';
 import logo from '../media/logo.png';
@@ -20,14 +20,14 @@ export default function AccountMenu() {
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const courseList = useSelector(state => state.user.courseList);
-  const loginStatus = useSelector(state => state.user.status);
   const photoSliderStatus = useSelector(state => state.photoSliderStatus.photoSliderStatus);
   const dispatch = useDispatch();
+  const history = useHistory();
 
-  if(!loginStatus){
-    return <Redirect to="/" />
+  const signOutFn = () => {
+    dispatch(signOut());
+    history.push("/");
   }
-
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -111,7 +111,7 @@ export default function AccountMenu() {
             photoSliderStatus ? "Закрыт слайд" : "Открыт слайд"
           }
         </MenuItem>
-        <MenuItem onClick={()=>dispatch(signOut())}>
+        <MenuItem onClick={signOutFn}>
           <ListItemIcon>
             <Logout fontSize="small" />
           </ListItemIcon>
