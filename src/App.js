@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { HashRouter, Switch, Route} from "react-router-dom";
 import './App.css';
 import { Offline, Online } from "react-detect-offline";
 import Home from './pages/Home';
@@ -11,13 +11,13 @@ function App() {
   return (
     <div className="App">
       <Online>
-        <Router>  
+        <HashRouter basename="/">  
           <Switch>
             <Route exact path="/" component ={Home} />
             <Route  path="/profile" component ={Profile} />
             <Route  path="/courses" component ={Courses} />
           </Switch> 
-        </Router> 
+        </HashRouter> 
       </Online>
       <Offline>
         <NoInternetConnection/>
