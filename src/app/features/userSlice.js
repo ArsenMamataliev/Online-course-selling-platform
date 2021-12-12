@@ -2,8 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 import courseList from './courseList';
 
 let user = {
-  login: "admin",
-  password: "123"
+  login: "user",
+  password: "amazone2021"
 }
 
 const userSlice = createSlice({

@@ -2,76 +2,40 @@ const courseList = [
     { 
       courseTitle: "Урок 1",
       subtopics: [
-        {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/XBu0PIhOlqs"},
-        {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/3OZA9FuRa34"},
-        {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/EBkf9zfcH2M"}
+        {courseName: "Регистрация", courseURL: "https://www.youtube.com/embed/q4KJVDKajQc"},
       ]
     },
     { 
         courseTitle: "Урок 2",
         subtopics: [
-          {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/EBkf9zfcH2M"}
+          {courseName: "Регистрация Payoneer", courseURL: "https://www.youtube.com/embed/uV_wzFmblnQ"}
         ]
       },
       { 
         courseTitle: "Урок 3",
         subtopics: [
-          {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/EBkf9zfcH2M"},
-          {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/EBkf9zfcH2M"}
+          {courseName: "Настройка аккаунта", courseURL: "https://www.youtube.com/embed/V6l39cRN850"}
         ]
       },
       { 
         courseTitle: "Урок 4",
         subtopics: [
-          {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/U5EemWhhuz4"},
-          {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/U5EemWhhuz4"}
+          {courseName: "Deposit and Tax info", courseURL: "https://www.youtube.com/embed/sjrP7OzDSJY"}
         ]
       },
       { 
         courseTitle: "Урок 5",
         subtopics: [
-          {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/U5EemWhhuz4"},
-          {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/U5EemWhhuz4"}
+          {courseName: "Utilitybill (Счет за коммунальные услуги)", courseURL: "https://www.youtube.com/embed/vv7rZyAmN2c"}
         ]
       },
       { 
         courseTitle: "Урок 6",
         subtopics: [
-          {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/U5EemWhhuz4"},
-          {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/U5EemWhhuz4"}
-        ]
-      },
-      { 
-        courseTitle: "Урок 7",
-        subtopics: [
-          {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/U5EemWhhuz4"},
-          {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/U5EemWhhuz4"}
-        ]
-      },
-      { 
-        courseTitle: "Урок 8",
-        subtopics: [
-          {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/U5EemWhhuz4"},
-          {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/U5EemWhhuz4"}
-        ]
-      },
-      { 
-        courseTitle: "Урок 9",
-        subtopics: [
-          {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/U5EemWhhuz4"},
-          {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/U5EemWhhuz4"},
-          {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/U5EemWhhuz4"},
-          {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/U5EemWhhuz4"}
-        ]
-      },
-      { 
-        courseTitle: "Урок 10",
-        subtopics: [
-          {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/U5EemWhhuz4"},
-          {courseName: "Урок 1", courseURL: "https://www.youtube.com/embed/U5EemWhhuz4"}
+          {courseName: "Bui box", courseURL: "https://www.youtube.com/embed/DxJjs1WW93w"}
         ]
       }
-
+      
     ];
 
     export default courseList

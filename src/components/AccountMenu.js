@@ -100,7 +100,7 @@ export default function AccountMenu() {
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
         <MenuItem>
-          <Avatar /> Админ
+          <Avatar /> Ползователь 1
         </MenuItem>
         <Divider />
         <MenuItem onClick={photoSliderCnangeStatus}>

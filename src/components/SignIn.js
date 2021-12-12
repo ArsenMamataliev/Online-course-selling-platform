@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {useHistory} from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 import { passwordVerification } from '../app/features/userSlice';
-import amazonLogo from '../media/amazonlogomini.jpg';
+import amazoneLogo from '../media/logo.png';
 import CustomizedSnackbars from './Alert';
 
 function SignIn() {
@@ -27,8 +27,8 @@ function SignIn() {
     return (
 
         <form action="" className="form-container">
-            <h1>Вход в систему</h1>
-            <img src={amazonLogo} alt="Amozon logo"/>
+            <h2>Вход в систему</h2>
+            <img src={amazoneLogo} alt="Amozon logo"/>
             <label htmlFor="text"><b>Логин</b></label>
             <input type="text" 
                 placeholder="Логин"
