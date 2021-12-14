@@ -20,22 +20,33 @@ const courseList = [
       { 
         courseTitle: "Урок 4",
         subtopics: [
-          {courseName: "Deposit and Tax info", courseURL: "https://www.youtube.com/embed/sjrP7OzDSJY"}
+          {courseName: "Информация о депозите и налогах (Deposit and Tax info)", courseURL: "https://www.youtube.com/embed/sjrP7OzDSJY"}
         ]
       },
       { 
         courseTitle: "Урок 5",
         subtopics: [
-          {courseName: "Utilitybill (Счет за коммунальные услуги)", courseURL: "https://www.youtube.com/embed/vv7rZyAmN2c"}
+          {courseName: "Счет за коммунальные услуги (Utilitybill)", courseURL: "https://www.youtube.com/embed/vv7rZyAmN2c"}
         ]
       },
       { 
         courseTitle: "Урок 6",
         subtopics: [
-          {courseName: "Bui box", courseURL: "https://www.youtube.com/embed/DxJjs1WW93w"}
+          {courseName: "Ящик для покупок (Bui box)", courseURL: "https://www.youtube.com/embed/DxJjs1WW93w"}
+        ]
+      },
+      { 
+        courseTitle: "Урок 7",
+        subtopics: [
+          {courseName: "Урок 7.Состояние аккаунта (Account health)", courseURL: "https://www.youtube.com/embed/gPwv2wF44aM"}
+        ]
+      },
+      { 
+        courseTitle: "Урок 8",
+        subtopics: [
+          {courseName: "Настройки доставки (Shipping settings)", courseURL: "https://www.youtube.com/embed/DU9sIMAJt3s"}
         ]
       }
-      
     ];
 
     export default courseList
