@@ -44,7 +44,13 @@ const courseList = [
       { 
         courseTitle: "Урок 8",
         subtopics: [
-          {courseName: "Настройки доставки (Shipping settings)", courseURL: "https://www.youtube.com/embed/DU9sIMAJt3s"}
+          {courseName: "Настройки доставки и возврата (Shipping and return settings)", courseURL: "https://www.youtube.com/embed/DU9sIMAJt3s"}
+        ]
+      },
+      { 
+        courseTitle: "Урок 9",
+        subtopics: [
+          {courseName: " Программные инструменты (soft tools)", courseURL: "https://www.youtube.com/embed/kpIZLjRfRkY"}
         ]
       }
     ];

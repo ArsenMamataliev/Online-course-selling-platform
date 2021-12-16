@@ -1,14 +1,12 @@
-## Demo authentication task
- This app have 2 pages
- 1. Home
- 2. Profile
+## Online course selling platform.
 
-You can't sign up in it
+You can't watch videos inside platform, there is limited access
+to videos. Videos are stored in Youtube. When you buy a course,
+we'll give you access from Youtube.
 
-While you type correct login and password SiGN IN button disabled
 
-Please, just use them
+Default auth settings
 {
-    login: "developer21",
-    password: 123456
+    login: "user",
+    password: amazone2021
 }

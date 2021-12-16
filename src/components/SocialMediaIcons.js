@@ -18,7 +18,7 @@ export default function SocialMediaIcons() {
         <Link href="https://www.youtube.com/channel/UCxrshyKUTQDsbKtuXzDLJbg">
           <YouTubeIcon style={{fill: "red"}}/>
         </Link>
-        <Link href="https://wa.link/hwd7jx">
+        <Link href="https://wa.me/+996706173317">
           <WhatsAppIcon style={{fill: "green"}}/>
         </Link>
     </Stack>
