@@ -50,7 +50,13 @@ const courseList = [
       { 
         courseTitle: "Урок 9",
         subtopics: [
-          {courseName: " Программные инструменты (soft tools)", courseURL: "https://www.youtube.com/embed/kpIZLjRfRkY"}
+          {courseName: "Программные инструменты (soft tools)", courseURL: "https://www.youtube.com/embed/kpIZLjRfRkY"}
+        ]
+      },
+      { 
+        courseTitle: "Урок 10",
+        subtopics: [
+          {courseName: "BSR", courseURL: "https://www.youtube.com/embed/ha0xmyarKDo"}
         ]
       }
     ];
