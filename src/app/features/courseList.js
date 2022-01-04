@@ -58,6 +58,18 @@ const courseList = [
         subtopics: [
           {courseName: "BSR", courseURL: "https://www.youtube.com/embed/ha0xmyarKDo"}
         ]
+      },
+      { 
+        courseTitle: "Урок 11",
+        subtopics: [
+          {courseName: "Поиск поставщика", courseURL: "https://www.youtube.com/embed/gMA3fiw7XBw"}
+        ]
+      },
+      { 
+        courseTitle: "Урок 12",
+        subtopics: [
+          {courseName: "ASINresearch", courseURL: "https://www.youtube.com/embed/i_vxo9sSgYk"}
+        ]
       }
     ];
 
