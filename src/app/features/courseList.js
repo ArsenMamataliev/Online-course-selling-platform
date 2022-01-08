@@ -70,6 +70,12 @@ const courseList = [
         subtopics: [
           {courseName: "ASINresearch", courseURL: "https://www.youtube.com/embed/i_vxo9sSgYk"}
         ]
+      },
+      { 
+        courseTitle: "Урок 13",
+        subtopics: [
+          {courseName: "Для чего нужны трек номера", courseURL: "https://www.youtube.com/embed/O24wnGJ3g64"}
+        ]
       }
     ];
 
